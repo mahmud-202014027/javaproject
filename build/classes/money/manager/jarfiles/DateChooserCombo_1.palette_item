@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<palette_item version="1.0">
+  <component classname="datechooser.beans.DateChooserCombo" />
+  <classpath>
+      <resource type="jar" name="C:\Users\asus\Downloads\Compressed\jdatechooser_bin_doc_1_1_1\jdatechooser_bin_doc_1_1_1\lib\DateChooser.jar" />
+  </classpath>
+</palette_item>
