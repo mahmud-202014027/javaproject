@@ -37,7 +37,7 @@ public class Daily extends javax.swing.JFrame {
       barDataset.setValue( "Shopping" , new Double (5468) );
       
       //create chart
-       JFreeChart piechart = ChartFactory.createPieChart("mobile sales",barDataset, false,true,false);//explain
+       JFreeChart piechart = ChartFactory.createPieChart("",barDataset, false,true,false);//explain
       
         PiePlot piePlot =(PiePlot) piechart.getPlot();
       
@@ -48,6 +48,7 @@ public class Daily extends javax.swing.JFrame {
       
        
         piePlot.setBackgroundPaint(new Color(153,153,255));
+        piePlot.setOutlinePaint(null);
         
         //create chartPanel to display chart(graph)
         ChartPanel barChartPanel = new ChartPanel(piechart);
@@ -68,11 +69,22 @@ public class Daily extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Header = new java.awt.Panel();
+        jPanel1 = new javax.swing.JPanel();
+        rSButtonHover4 = new rojerusan.RSButtonHover();
+        rSButtonHover5 = new rojerusan.RSButtonHover();
+        rSButtonHover6 = new rojerusan.RSButtonHover();
+        rSButtonHover7 = new rojerusan.RSButtonHover();
+        rSButtonHover8 = new rojerusan.RSButtonHover();
+        rSButtonHover9 = new rojerusan.RSButtonHover();
+        rSButtonHover10 = new rojerusan.RSButtonHover();
+        rSButtonHover11 = new rojerusan.RSButtonHover();
+        rSButtonHover12 = new rojerusan.RSButtonHover();
+        rSButtonHover13 = new rojerusan.RSButtonHover();
+        jButton2 = new javax.swing.JButton();
         panel1 = new java.awt.Panel();
         panel3 = new java.awt.Panel();
         label1 = new java.awt.Label();
-        jTextField1 = new javax.swing.JTextField();
+        dateChooserCombo1 = new datechooser.beans.DateChooserCombo();
         panel4 = new java.awt.Panel();
         label2 = new java.awt.Label();
         jTextField2 = new javax.swing.JTextField();
@@ -89,35 +101,175 @@ public class Daily extends javax.swing.JFrame {
         label8 = new java.awt.Label();
         label9 = new java.awt.Label();
         panel2 = new java.awt.Panel();
-        panel6 = new java.awt.Panel();
-        panel8 = new java.awt.Panel();
-        label10 = new java.awt.Label();
-        label11 = new java.awt.Label();
-        label12 = new java.awt.Label();
-        label13 = new java.awt.Label();
-        label14 = new java.awt.Label();
-        label15 = new java.awt.Label();
-        label16 = new java.awt.Label();
-        panelBarChart = new java.awt.Panel();
         panel7 = new java.awt.Panel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        panel6 = new java.awt.Panel();
+        rSButtonHover29 = new rojerusan.RSButtonHover();
+        rSButtonHover18 = new rojerusan.RSButtonHover();
+        panelBarChart = new java.awt.Panel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds((screenWidth/2)-400, (screenHeight/2)-250, 0, 0);
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(900, 500));
 
-        Header.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setPreferredSize(new java.awt.Dimension(784, 62));
 
-        javax.swing.GroupLayout HeaderLayout = new javax.swing.GroupLayout(Header);
-        Header.setLayout(HeaderLayout);
-        HeaderLayout.setHorizontalGroup(
-            HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1272, Short.MAX_VALUE)
+        rSButtonHover4.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover4.setText("Monthly");
+        rSButtonHover4.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover4ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover5.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover5.setText("Filter");
+        rSButtonHover5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover5ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover6.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover6.setText("Stats");
+        rSButtonHover6.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover6ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover7.setBackground(new java.awt.Color(102, 0, 102));
+        rSButtonHover7.setText("Daily");
+        rSButtonHover7.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover7ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover8.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover8.setText("X");
+        rSButtonHover8.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover8ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover9.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover9.setText("Signout");
+        rSButtonHover9.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover9ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover10.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover10.setText("HOME");
+        rSButtonHover10.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover10ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover11.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover11.setText("Saving");
+        rSButtonHover11.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover11ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover12.setBackground(new java.awt.Color(51, 0, 153));
+        rSButtonHover12.setText("MONEY MANAGER");
+        rSButtonHover12.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover12ActionPerformed(evt);
+            }
+        });
+
+        rSButtonHover13.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover13.setText("Setting");
+        rSButtonHover13.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover13ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/money/manager/images/money.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton2)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(rSButtonHover10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rSButtonHover4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(rSButtonHover13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(rSButtonHover9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 320, Short.MAX_VALUE)
+                        .addComponent(rSButtonHover12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rSButtonHover8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
-        HeaderLayout.setVerticalGroup(
-            HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(rSButtonHover12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rSButtonHover8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rSButtonHover5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
-        getContentPane().add(Header, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
 
         panel1.setPreferredSize(new java.awt.Dimension(300, 400));
         panel1.setLayout(new java.awt.BorderLayout());
@@ -131,11 +283,8 @@ public class Daily extends javax.swing.JFrame {
         label1.setText("Date");
         panel3.add(label1);
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setPreferredSize(new java.awt.Dimension(71, 25));
-        panel3.add(jTextField1);
+        dateChooserCombo1.setCalendarBackground(new java.awt.Color(204, 204, 204));
+        panel3.add(dateChooserCombo1);
 
         panel1.add(panel3, java.awt.BorderLayout.NORTH);
 
@@ -153,14 +302,14 @@ public class Daily extends javax.swing.JFrame {
         jTextField2.setBackground(new java.awt.Color(255, 102, 102));
         jTextField2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField2.setText("8,393/-");
+        jTextField2.setText("10,193");
         jTextField2.setBorder(null);
         panel4.add(jTextField2);
 
         panel1.add(panel4, java.awt.BorderLayout.CENTER);
 
         panel5.setBackground(new java.awt.Color(102, 102, 255));
-        panel5.setPreferredSize(new java.awt.Dimension(300, 250));
+        panel5.setPreferredSize(new java.awt.Dimension(300, 300));
         java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 20, 20);
         flowLayout1.setAlignOnBaseline(true);
         panel5.setLayout(flowLayout1);
@@ -251,63 +400,129 @@ public class Daily extends javax.swing.JFrame {
 
         panel2.setLayout(new java.awt.BorderLayout());
 
-        panel6.setPreferredSize(new java.awt.Dimension(600, 150));
-        panel6.setLayout(new java.awt.BorderLayout());
+        panel7.setPreferredSize(new java.awt.Dimension(484, 250));
+        panel7.setLayout(new java.awt.BorderLayout());
 
-        panel8.setBackground(new java.awt.Color(153, 153, 255));
-        panel8.setPreferredSize(new java.awt.Dimension(200, 150));
-        java.awt.FlowLayout flowLayout6 = new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 2);
-        flowLayout6.setAlignOnBaseline(true);
-        panel8.setLayout(flowLayout6);
+        jTable1.setBackground(new java.awt.Color(0, 51, 0));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"1", null, null, null, null, null, null},
+                {"2", null, null, null, null, null, null},
+                {"3", null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Ser", "Date", "Expense", "Category", "Comment", "Edit", "Delete"
+            }
+        ));
+        jTable1.setGridColor(new java.awt.Color(0, 51, 0));
+        jTable1.setPreferredSize(new java.awt.Dimension(484, 0));
+        jTable1.setSelectionForeground(new java.awt.Color(0, 51, 0));
+        jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setPreferredWidth(10);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(75);
+            jTable1.getColumnModel().getColumn(2).setPreferredWidth(75);
+            jTable1.getColumnModel().getColumn(3).setPreferredWidth(75);
+            jTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+            jTable1.getColumnModel().getColumn(5).setPreferredWidth(20);
+            jTable1.getColumnModel().getColumn(6).setPreferredWidth(20);
+        }
 
-        label10.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        label10.setPreferredSize(new java.awt.Dimension(175, 40));
-        label10.setText("Category Analyser");
-        panel8.add(label10);
+        panel7.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        label11.setBackground(new java.awt.Color(0, 204, 102));
-        label11.setPreferredSize(new java.awt.Dimension(45, 10));
-        panel8.add(label11);
+        panel6.setPreferredSize(new java.awt.Dimension(527, 30));
+        panel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 5));
 
-        label12.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
-        label12.setPreferredSize(new java.awt.Dimension(100, 12));
-        label12.setText("Food");
-        panel8.add(label12);
+        rSButtonHover29.setBackground(new java.awt.Color(153, 0, 0));
+        rSButtonHover29.setText("Export to Excel");
+        rSButtonHover29.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover29.setPreferredSize(new java.awt.Dimension(150, 20));
+        rSButtonHover29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover29ActionPerformed(evt);
+            }
+        });
+        panel6.add(rSButtonHover29);
 
-        label13.setBackground(new java.awt.Color(255, 153, 51));
-        label13.setPreferredSize(new java.awt.Dimension(45, 10));
-        panel8.add(label13);
+        rSButtonHover18.setBackground(new java.awt.Color(153, 0, 0));
+        rSButtonHover18.setText("Print");
+        rSButtonHover18.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover18.setPreferredSize(new java.awt.Dimension(150, 20));
+        rSButtonHover18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover18ActionPerformed(evt);
+            }
+        });
+        panel6.add(rSButtonHover18);
 
-        label14.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
-        label14.setPreferredSize(new java.awt.Dimension(100, 12));
-        label14.setText("Entertainment");
-        panel8.add(label14);
+        panel7.add(panel6, java.awt.BorderLayout.SOUTH);
 
-        label15.setBackground(new java.awt.Color(255, 255, 0));
-        label15.setPreferredSize(new java.awt.Dimension(45, 10));
-        panel8.add(label15);
-
-        label16.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
-        label16.setPreferredSize(new java.awt.Dimension(100, 12));
-        label16.setText("Shopping");
-        panel8.add(label16);
-
-        panel6.add(panel8, java.awt.BorderLayout.WEST);
+        panel2.add(panel7, java.awt.BorderLayout.SOUTH);
 
         panelBarChart.setBackground(new java.awt.Color(153, 153, 255));
         panelBarChart.setLayout(new java.awt.BorderLayout());
-        panel6.add(panelBarChart, java.awt.BorderLayout.CENTER);
-
-        panel2.add(panel6, java.awt.BorderLayout.CENTER);
-
-        panel7.setPreferredSize(new java.awt.Dimension(600, 250));
-        panel7.setLayout(new javax.swing.BoxLayout(panel7, javax.swing.BoxLayout.LINE_AXIS));
-        panel2.add(panel7, java.awt.BorderLayout.SOUTH);
+        panel2.add(panelBarChart, java.awt.BorderLayout.CENTER);
 
         getContentPane().add(panel2, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void rSButtonHover4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover4ActionPerformed
+
+    private void rSButtonHover5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover5ActionPerformed
+
+    private void rSButtonHover6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover6ActionPerformed
+
+    private void rSButtonHover7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover7ActionPerformed
+
+    private void rSButtonHover8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover8ActionPerformed
+
+        // TODO add your handling code here:
+        System.exit(0);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover8ActionPerformed
+
+    private void rSButtonHover9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover9ActionPerformed
+
+    private void rSButtonHover10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover10ActionPerformed
+
+    private void rSButtonHover11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover11ActionPerformed
+
+    private void rSButtonHover12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover12ActionPerformed
+
+    private void rSButtonHover13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover13ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void rSButtonHover29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover29ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover29ActionPerformed
+
+    private void rSButtonHover18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover18ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -345,17 +560,13 @@ public class Daily extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Panel Header;
-    private javax.swing.JTextField jTextField1;
+    private datechooser.beans.DateChooserCombo dateChooserCombo1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField2;
     private java.awt.Label label1;
-    private java.awt.Label label10;
-    private java.awt.Label label11;
-    private java.awt.Label label12;
-    private java.awt.Label label13;
-    private java.awt.Label label14;
-    private java.awt.Label label15;
-    private java.awt.Label label16;
     private java.awt.Label label2;
     private java.awt.Label label3;
     private java.awt.Label label4;
@@ -374,8 +585,19 @@ public class Daily extends javax.swing.JFrame {
     private java.awt.Panel panel5;
     private java.awt.Panel panel6;
     private java.awt.Panel panel7;
-    private java.awt.Panel panel8;
     private java.awt.Panel panel9;
     private java.awt.Panel panelBarChart;
+    private rojerusan.RSButtonHover rSButtonHover10;
+    private rojerusan.RSButtonHover rSButtonHover11;
+    private rojerusan.RSButtonHover rSButtonHover12;
+    private rojerusan.RSButtonHover rSButtonHover13;
+    private rojerusan.RSButtonHover rSButtonHover18;
+    private rojerusan.RSButtonHover rSButtonHover29;
+    private rojerusan.RSButtonHover rSButtonHover4;
+    private rojerusan.RSButtonHover rSButtonHover5;
+    private rojerusan.RSButtonHover rSButtonHover6;
+    private rojerusan.RSButtonHover rSButtonHover7;
+    private rojerusan.RSButtonHover rSButtonHover8;
+    private rojerusan.RSButtonHover rSButtonHover9;
     // End of variables declaration//GEN-END:variables
 }

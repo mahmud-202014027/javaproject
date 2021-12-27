@@ -32,17 +32,18 @@ public class Settings extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Header = new java.awt.Panel();
-        jButton1 = new javax.swing.JButton();
-        label1 = new java.awt.Label();
-        Menu = new java.awt.Panel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        rSButtonHover4 = new rojerusan.RSButtonHover();
+        rSButtonHover5 = new rojerusan.RSButtonHover();
+        rSButtonHover6 = new rojerusan.RSButtonHover();
+        rSButtonHover7 = new rojerusan.RSButtonHover();
+        rSButtonHover8 = new rojerusan.RSButtonHover();
+        rSButtonHover9 = new rojerusan.RSButtonHover();
+        rSButtonHover10 = new rojerusan.RSButtonHover();
+        rSButtonHover11 = new rojerusan.RSButtonHover();
+        rSButtonHover12 = new rojerusan.RSButtonHover();
+        rSButtonHover13 = new rojerusan.RSButtonHover();
+        jButton10 = new javax.swing.JButton();
         Body = new java.awt.Panel();
         Profile = new java.awt.Panel();
         Picture = new java.awt.Panel();
@@ -82,143 +83,170 @@ public class Settings extends javax.swing.JFrame {
         setTitle("Settings");
         setBounds((screenWidth/2)-400, (screenHeight/2)-250, 0, 0);
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(784, 450));
 
-        Header.setBackground(new java.awt.Color(51, 153, 255));
-        Header.setPreferredSize(new java.awt.Dimension(800, 50));
-        Header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setPreferredSize(new java.awt.Dimension(784, 62));
 
-        jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/x.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setFocusPainted(false);
-        jButton1.setFocusable(false);
-        jButton1.setRequestFocusEnabled(false);
-        jButton1.setRolloverEnabled(false);
-        jButton1.setVerifyInputWhenFocusTarget(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        rSButtonHover4.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover4.setText("Monthly");
+        rSButtonHover4.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                rSButtonHover4ActionPerformed(evt);
             }
         });
-        Header.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 10, -1, -1));
 
-        label1.setFont(new java.awt.Font("Dialog", 1, 27)); // NOI18N
-        label1.setText("Settings");
-        Header.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 3, -1, -1));
+        rSButtonHover5.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover5.setText("Filter");
+        rSButtonHover5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover5ActionPerformed(evt);
+            }
+        });
 
-        Menu.setBackground(new java.awt.Color(51, 153, 255));
-        Menu.setLayout(new java.awt.GridLayout(1, 7, 2, 0));
+        rSButtonHover6.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover6.setText("Stats");
+        rSButtonHover6.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover6ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setBackground(new java.awt.Color(51, 153, 255));
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Home");
-        jButton2.setAlignmentY(0.6F);
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setDefaultCapable(false);
-        jButton2.setFocusPainted(false);
-        jButton2.setFocusable(false);
-        jButton2.setRequestFocusEnabled(false);
-        jButton2.setRolloverEnabled(false);
-        jButton2.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton2);
+        rSButtonHover7.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover7.setText("Daily");
+        rSButtonHover7.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover7ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setBackground(new java.awt.Color(51, 153, 255));
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("Monthly");
-        jButton3.setAlignmentY(0.6F);
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setFocusPainted(false);
-        jButton3.setFocusable(false);
-        jButton3.setRequestFocusEnabled(false);
-        jButton3.setRolloverEnabled(false);
-        jButton3.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton3);
+        rSButtonHover8.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover8.setText("X");
+        rSButtonHover8.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover8ActionPerformed(evt);
+            }
+        });
 
-        jButton4.setBackground(new java.awt.Color(51, 153, 255));
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jButton4.setText("Daily");
-        jButton4.setAlignmentY(0.6F);
-        jButton4.setBorder(null);
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
-        jButton4.setFocusPainted(false);
-        jButton4.setFocusable(false);
-        jButton4.setRequestFocusEnabled(false);
-        jButton4.setRolloverEnabled(false);
-        jButton4.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton4);
+        rSButtonHover9.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover9.setText("Signout");
+        rSButtonHover9.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover9ActionPerformed(evt);
+            }
+        });
 
-        jButton5.setBackground(new java.awt.Color(51, 153, 255));
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("Filter");
-        jButton5.setAlignmentY(0.6F);
-        jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.setFocusPainted(false);
-        jButton5.setFocusable(false);
-        jButton5.setRequestFocusEnabled(false);
-        jButton5.setRolloverEnabled(false);
-        jButton5.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton5);
+        rSButtonHover10.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover10.setText("HOME");
+        rSButtonHover10.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover10ActionPerformed(evt);
+            }
+        });
 
-        jButton6.setBackground(new java.awt.Color(51, 153, 255));
-        jButton6.setForeground(new java.awt.Color(0, 0, 0));
-        jButton6.setText("Stats");
-        jButton6.setAlignmentY(0.6F);
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.setFocusPainted(false);
-        jButton6.setFocusable(false);
-        jButton6.setRequestFocusEnabled(false);
-        jButton6.setRolloverEnabled(false);
-        jButton6.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton6);
+        rSButtonHover11.setBackground(new java.awt.Color(153, 51, 0));
+        rSButtonHover11.setText("Saving");
+        rSButtonHover11.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover11ActionPerformed(evt);
+            }
+        });
 
-        jButton7.setBackground(new java.awt.Color(51, 153, 255));
-        jButton7.setForeground(new java.awt.Color(0, 0, 0));
-        jButton7.setText("Savings");
-        jButton7.setAlignmentY(0.6F);
-        jButton7.setBorder(null);
-        jButton7.setBorderPainted(false);
-        jButton7.setContentAreaFilled(false);
-        jButton7.setFocusPainted(false);
-        jButton7.setFocusable(false);
-        jButton7.setRequestFocusEnabled(false);
-        jButton7.setRolloverEnabled(false);
-        jButton7.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton7);
+        rSButtonHover12.setBackground(new java.awt.Color(51, 0, 153));
+        rSButtonHover12.setText("MONEY MANAGER");
+        rSButtonHover12.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover12ActionPerformed(evt);
+            }
+        });
 
-        jButton8.setBackground(new java.awt.Color(51, 153, 255));
-        jButton8.setForeground(new java.awt.Color(0, 0, 0));
-        jButton8.setText("Settings");
-        jButton8.setAlignmentY(0.6F);
-        jButton8.setBorder(null);
-        jButton8.setBorderPainted(false);
-        jButton8.setContentAreaFilled(false);
-        jButton8.setFocusPainted(false);
-        jButton8.setFocusable(false);
-        jButton8.setRequestFocusEnabled(false);
-        jButton8.setRolloverEnabled(false);
-        jButton8.setVerifyInputWhenFocusTarget(false);
-        Menu.add(jButton8);
+        rSButtonHover13.setBackground(new java.awt.Color(102, 0, 102));
+        rSButtonHover13.setText("Setting");
+        rSButtonHover13.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        rSButtonHover13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover13ActionPerformed(evt);
+            }
+        });
 
-        Header.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 2, 420, 40));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/money/manager/images/money.png"))); // NOI18N
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
-        getContentPane().add(Header, java.awt.BorderLayout.NORTH);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton10)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(rSButtonHover10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rSButtonHover4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rSButtonHover11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(rSButtonHover13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(rSButtonHover9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 7, Short.MAX_VALUE)
+                        .addComponent(rSButtonHover12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rSButtonHover8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(rSButtonHover12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rSButtonHover8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rSButtonHover5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSButtonHover13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
 
         Body.setBackground(new java.awt.Color(204, 204, 204));
         Body.setLayout(new java.awt.BorderLayout());
 
         Profile.setBackground(new java.awt.Color(0, 0, 0));
-        Profile.setPreferredSize(new java.awt.Dimension(400, 450));
+        Profile.setPreferredSize(new java.awt.Dimension(350, 450));
         Profile.setLayout(new java.awt.BorderLayout());
 
         Picture.setBackground(new java.awt.Color(0, 102, 102));
@@ -228,7 +256,7 @@ public class Settings extends javax.swing.JFrame {
         Mahdi_Pic.setBackground(new java.awt.Color(0, 0, 0));
         Mahdi_Pic.setForeground(new java.awt.Color(255, 255, 255));
         Mahdi_Pic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Mahdi_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/202014028.JPG"))); // NOI18N
+        Mahdi_Pic.setIcon(new javax.swing.ImageIcon("E:\\OneDrive - Military Institute of Science and Technology (MIST)\\Level-2 Term-2\\CSE-220 OOP Sessional-II\\javaproject\\src\\money\\manager\\images\\202014028.JPG")); // NOI18N
         Mahdi_Pic.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
         Mahdi_Pic.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Mahdi_Pic.setFocusable(false);
@@ -236,7 +264,7 @@ public class Settings extends javax.swing.JFrame {
         Mahdi_Pic.setRequestFocusEnabled(false);
         Picture.add(Mahdi_Pic);
 
-        Profile.add(Picture, java.awt.BorderLayout.PAGE_START);
+        Profile.add(Picture, java.awt.BorderLayout.CENTER);
 
         User_Info.setBackground(new java.awt.Color(153, 153, 153));
         User_Info.setPreferredSize(new java.awt.Dimension(400, 250));
@@ -248,7 +276,7 @@ public class Settings extends javax.swing.JFrame {
         Welcome.setMinimumSize(new java.awt.Dimension(214, 27));
         Welcome.setPreferredSize(new java.awt.Dimension(214, 45));
         Welcome.setText("Welcome, Mahdi Mohtasim");
-        User_Info.add(Welcome, java.awt.BorderLayout.PAGE_START);
+        User_Info.add(Welcome, java.awt.BorderLayout.CENTER);
 
         Info.setBackground(new java.awt.Color(204, 204, 204));
         Info.setPreferredSize(new java.awt.Dimension(400, 205));
@@ -257,6 +285,8 @@ public class Settings extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Email :");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel1.setPreferredSize(new java.awt.Dimension(60, 15));
         Info.add(jLabel1);
 
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
@@ -266,6 +296,8 @@ public class Settings extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Phone :");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel2.setPreferredSize(new java.awt.Dimension(60, 15));
         Info.add(jLabel2);
 
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
@@ -276,6 +308,8 @@ public class Settings extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Gender :");
         jLabel3.setToolTipText("");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel3.setPreferredSize(new java.awt.Dimension(60, 15));
         Info.add(jLabel3);
 
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
@@ -285,6 +319,8 @@ public class Settings extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Occupation :");
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel4.setPreferredSize(new java.awt.Dimension(60, 15));
         Info.add(jLabel4);
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
@@ -294,19 +330,22 @@ public class Settings extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Status :");
+        jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel9.setPreferredSize(new java.awt.Dimension(60, 15));
         Info.add(jLabel9);
 
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Under Budget");
         Info.add(jLabel10);
 
-        User_Info.add(Info, java.awt.BorderLayout.LINE_END);
+        User_Info.add(Info, java.awt.BorderLayout.SOUTH);
 
         Profile.add(User_Info, java.awt.BorderLayout.SOUTH);
 
         Body.add(Profile, java.awt.BorderLayout.WEST);
 
         User_Settings.setBackground(new java.awt.Color(102, 102, 102));
+        User_Settings.setPreferredSize(new java.awt.Dimension(434, 450));
         User_Settings.setLayout(new java.awt.BorderLayout());
 
         panel2.setBackground(new java.awt.Color(51, 51, 51));
@@ -378,39 +417,84 @@ public class Settings extends javax.swing.JFrame {
         panel1Layout.setHorizontalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel1Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton9)
                     .addGroup(panel1Layout.createSequentialGroup()
-                        .addComponent(panel4, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(198, 198, 198)
+                        .addComponent(jButton9))
+                    .addGroup(panel1Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(panel4, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                         .addComponent(panel6, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panel4, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(panel6, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
+                .addGap(20, 20, 20)
+                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(panel4, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                    .addComponent(panel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton9)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
-        User_Settings.add(panel1, java.awt.BorderLayout.SOUTH);
+        User_Settings.add(panel1, java.awt.BorderLayout.CENTER);
 
         Body.add(User_Settings, java.awt.BorderLayout.CENTER);
 
-        getContentPane().add(Body, java.awt.BorderLayout.SOUTH);
+        getContentPane().add(Body, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void rSButtonHover4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover4ActionPerformed
+
+    private void rSButtonHover5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover5ActionPerformed
+
+    private void rSButtonHover6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover6ActionPerformed
+
+    private void rSButtonHover7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover7ActionPerformed
+
+    private void rSButtonHover8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover8ActionPerformed
+
+        // TODO add your handling code here:
+        System.exit(0);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover8ActionPerformed
+
+    private void rSButtonHover9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover9ActionPerformed
+
+    private void rSButtonHover10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover10ActionPerformed
+
+    private void rSButtonHover11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover11ActionPerformed
+
+    private void rSButtonHover12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover12ActionPerformed
+
+    private void rSButtonHover13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonHover13ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -449,23 +533,14 @@ public class Settings extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Panel Body;
-    private java.awt.Panel Header;
     private java.awt.Panel Info;
     private javax.swing.JLabel Mahdi_Pic;
-    private java.awt.Panel Menu;
     private java.awt.Panel Picture;
     private java.awt.Panel Profile;
     private java.awt.Panel User_Info;
     private java.awt.Panel User_Settings;
     private java.awt.Label Welcome;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
@@ -478,11 +553,11 @@ public class Settings extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private java.awt.Label label1;
     private java.awt.Label label2;
     private java.awt.Label label3;
     private java.awt.Label label4;
@@ -493,5 +568,15 @@ public class Settings extends javax.swing.JFrame {
     private java.awt.Panel panel2;
     private java.awt.Panel panel4;
     private java.awt.Panel panel6;
+    private rojerusan.RSButtonHover rSButtonHover10;
+    private rojerusan.RSButtonHover rSButtonHover11;
+    private rojerusan.RSButtonHover rSButtonHover12;
+    private rojerusan.RSButtonHover rSButtonHover13;
+    private rojerusan.RSButtonHover rSButtonHover4;
+    private rojerusan.RSButtonHover rSButtonHover5;
+    private rojerusan.RSButtonHover rSButtonHover6;
+    private rojerusan.RSButtonHover rSButtonHover7;
+    private rojerusan.RSButtonHover rSButtonHover8;
+    private rojerusan.RSButtonHover rSButtonHover9;
     // End of variables declaration//GEN-END:variables
 }
